@@ -1,4 +1,11 @@
 package ua.university.order.service;
 
-public class OrderRepository {
+import ua.university.order.domain.Order;
+
+import java.util.Optional;
+
+public interface OrderRepository {
+
+    Optional<Order> findById(String id);
+
 }
