@@ -19,17 +19,14 @@ public class Order {
         this.status = OrderStatus.NEW;
     }
 
-    public String getId() {
-        return id;
-    }
+    public String getId() { return id; }
+    public OrderStatus getStatus() { return status; }
+    public void setStatus(OrderStatus status) { this.status = status; }
+
     public OrderItem[] getItems() {
         return items.clone();
 
     }
-    public OrderStatus getStatus() {
-        return status;
-    }
-    public void setStatus(OrderStatus status) {this.status = status;}
 
     @Override
     public boolean equals(Object o) {

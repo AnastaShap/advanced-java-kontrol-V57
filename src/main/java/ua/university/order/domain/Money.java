@@ -11,7 +11,7 @@ public class Money {
     public double getAmount() {
         return amount;
     }
-    public Money multiply(int quantity) {
+    public Money multiply(double quantity) {
         return new Money(amount * quantity);
     }
 
